@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var customTextView: UITextView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,9 +23,20 @@ class ViewController: UIViewController {
         
     }
     
-    func txt() {
+  
+    @IBAction func itemClick(sender: AnyObject) {
         
-     
+        let range = NSRange(location: 0, length: customTextView.attributedText.length)
+        var strM = String()
+        customTextView.attributedText.enumerateAttributesInRange(range, options: NSAttributedStringEnumerationOptions(rawValue: 0)) { (dict, range, _) -> Void in
+            if let tempAttachment = dict["NSAttachment"] as? CSKeyboardAttachment {
+                strM += tempAttachment.emoticonChs!
+            } else {
+                strM += (self.customTextView.text as NSString).substringWithRange(range)
+            }
+            
+        }
+        print(strM)
     }
     
     private lazy var emotionKeyboardVC: CSEmotionKeyboardController = CSEmotionKeyboardController {[unowned self] (emoticon) -> () in
@@ -37,14 +49,15 @@ class ViewController: UIViewController {
             return
         }
         
-        // 新浪图文混排
+        // 默认和浪小花图文混排
         if let tempPngPath = emoticon.pngPath {
             
             // 通过textView中的属性文字创建属性字符串
             let attrMstr = NSMutableAttributedString(attributedString: self.customTextView.attributedText)
             
             // 创建图片的属性字符串
-            let attachment  = NSTextAttachment()
+            let attachment  = CSKeyboardAttachment()
+            attachment.emoticonChs = emoticon.chs
             let lineHeight = self.customTextView.font!.lineHeight
             attachment.bounds = CGRect(x: 0, y: -4, width: lineHeight, height: lineHeight)
             attachment.image = UIImage(contentsOfFile: tempPngPath)
@@ -69,7 +82,7 @@ class ViewController: UIViewController {
         
         // 删除最近一个文字或者表情
         if emoticon.isRemoveButton {
-        
+            self.customTextView.deleteBackward()
         }
     }
    

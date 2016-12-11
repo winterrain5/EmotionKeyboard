@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252C6A861DFD4F4D004A0C66 /* CSKeyboardAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252C6A851DFD4F4D004A0C66 /* CSKeyboardAttachment.swift */; };
 		2548323D1DF2BAFD00BDB5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548323C1DF2BAFD00BDB5FC /* AppDelegate.swift */; };
 		2548323F1DF2BAFD00BDB5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548323E1DF2BAFD00BDB5FC /* ViewController.swift */; };
 		254832421DF2BAFD00BDB5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254832401DF2BAFD00BDB5FC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252C6A851DFD4F4D004A0C66 /* CSKeyboardAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSKeyboardAttachment.swift; sourceTree = "<group>"; };
 		254832391DF2BAFD00BDB5FC /* EmotionKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2548323C1DF2BAFD00BDB5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2548323E1DF2BAFD00BDB5FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				254832511DF3BC0000BDB5FC /* Emoticons.bundle */,
+				252C6A851DFD4F4D004A0C66 /* CSKeyboardAttachment.swift */,
 				2548324F1DF2BBB900BDB5FC /* CSEmotionKeyboardController.swift */,
 				254832531DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift */,
 				254832551DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254832541DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift in Sources */,
+				252C6A861DFD4F4D004A0C66 /* CSKeyboardAttachment.swift in Sources */,
 				2548323F1DF2BAFD00BDB5FC /* ViewController.swift in Sources */,
 				254832561DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift in Sources */,
 				254832501DF2BBB900BDB5FC /* CSEmotionKeyboardController.swift in Sources */,
@@ -310,6 +314,7 @@
 				2548324D1DF2BAFD00BDB5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
