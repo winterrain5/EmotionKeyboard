@@ -11,6 +11,20 @@ import UIKit
 class CSEmotionKeyboardController: UIViewController {
 
     var packages:[CSEmotionKeyboardPackage] = CSEmotionKeyboardPackage.loadEmotionPackages()
+    
+    // 回调闭包
+    var emoticonCallback:(emoticon:CSKeyboardEmoticons)->()
+    
+    init(callback:(emoticon:CSKeyboardEmoticons)->()) {
+        
+        self.emoticonCallback = callback
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.redColor()
@@ -96,6 +110,9 @@ extension CSEmotionKeyboardController:UICollectionViewDelegate {
             // 将当前点击的表情添加到最近组
             packages[0].addFavoriteEmoticon(emoticon)
         }
+        
+        //
+        emoticonCallback(emoticon: emoticon)
     }
 }
 class CSEmotionKeyboardLayout : UICollectionViewFlowLayout {
