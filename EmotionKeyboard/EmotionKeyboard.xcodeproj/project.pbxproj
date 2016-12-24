@@ -17,6 +17,7 @@
 		254832521DF3BC0000BDB5FC /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 254832511DF3BC0000BDB5FC /* Emoticons.bundle */; };
 		254832541DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254832531DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift */; };
 		254832561DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254832551DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift */; };
+		25A019ED1E0E352700B6F6CF /* CSKeyboardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A019EC1E0E352700B6F6CF /* CSKeyboardTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		254832511DF3BC0000BDB5FC /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
 		254832531DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSEmotionKeyboardCell.swift; sourceTree = "<group>"; };
 		254832551DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSEmotionKeyboardPackage.swift; sourceTree = "<group>"; };
+		25A019EC1E0E352700B6F6CF /* CSKeyboardTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSKeyboardTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2548324F1DF2BBB900BDB5FC /* CSEmotionKeyboardController.swift */,
 				254832531DF3EE3100BDB5FC /* CSEmotionKeyboardCell.swift */,
 				254832551DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift */,
+				25A019EC1E0E352700B6F6CF /* CSKeyboardTextView.swift */,
 			);
 			name = EmotionKeyboard;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				254832561DF3F37B00BDB5FC /* CSEmotionKeyboardPackage.swift in Sources */,
 				254832501DF2BBB900BDB5FC /* CSEmotionKeyboardController.swift in Sources */,
 				2548323D1DF2BAFD00BDB5FC /* AppDelegate.swift in Sources */,
+				25A019ED1E0E352700B6F6CF /* CSKeyboardTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

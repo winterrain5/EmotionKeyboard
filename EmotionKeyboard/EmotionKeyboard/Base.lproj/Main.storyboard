@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="asdfasd ;ohhjals   akjsdfjl h akdskfjh" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kcd-Wm-5fC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="asdfasd ;ohhjals   akjsdfjl h akdskfjh" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kcd-Wm-5fC" customClass="CSKeyboardTextView" customModule="EmotionKeyboard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="14" width="600" height="128"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1147" y="322"/>
+            <point key="canvasLocation" x="1229" y="298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dV0-pc-2Y6">
