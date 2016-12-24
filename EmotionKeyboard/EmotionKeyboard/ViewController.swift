@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var customTextView: CSKeyboardTextView!
    
+    @IBOutlet weak var showLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     @IBAction func itemClick(sender: AnyObject) {
         
         print(self.customTextView.emoticonStr())
+        showLabel.text = self.customTextView.emoticonStr()
     }
     
     private lazy var emotionKeyboardVC: CSEmotionKeyboardController = CSEmotionKeyboardController {[unowned self] (emoticon) -> () in
